@@ -20,9 +20,19 @@ namespace Jumper
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string PageTitle { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.NavigationService.Navigate(new Pages.AgentsListPage());
+
+            MainFrame.Navigated += MainFrame_Navigated;
+            DataContext = this;
+        }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            tbTitle.Text = (MainFrame.Content as Page).Title;
         }
     }
 }

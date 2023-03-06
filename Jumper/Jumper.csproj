@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Попрыженок.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -44,6 +47,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
@@ -69,6 +73,9 @@
     </Compile>
     <Compile Include="Windows\ChangePriorityWindow.xaml.cs">
       <DependentUpon>ChangePriorityWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ProductCountWindow.xaml.cs">
+      <DependentUpon>ProductCountWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -154,6 +161,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\ProductCountWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AgentsListPage.xaml.cs">
@@ -203,6 +214,9 @@
       <DependentUpon>JumperModel.edmx</DependentUpon>
       <LastGenOutput>JumperModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\picture.png" />
+    <Resource Include="Resources\Попрыженок.png" />
+    <None Include="Resources\Попрыженок.ico" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

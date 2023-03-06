@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Jumper.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AgentsListPage">
+      Title="Список агентов">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -46,7 +46,7 @@
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Background="{Binding Background}">
                                 <Image Width="100" >
                                     <Image.Source>
-                                        <Binding Path="LogoImage">
+                                        <Binding Path="Logo">
                                             <Binding.TargetNullValue>
                                                 <ImageSource>/Resources/picture.png</ImageSource>
                                             </Binding.TargetNullValue>

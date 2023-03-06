@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jumper.Windows"
         mc:Ignorable="d"
-        Title="ChangePriorityWindow" Height="450" Width="800">
+        Title="Изменение приоритета" Height="200" Width="300"
+        ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -15,7 +16,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBlock Text="Введите на сколько хотите изменить цену" TextWrapping="Wrap"/>
+        <TextBlock Text="Введите на сколько хотите изменить приоритет" TextWrapping="Wrap"/>
         <TextBox x:Name="tbPriority" Grid.Row="1"
                  Text="{Binding Priority, ValidatesOnDataErrors=true}"/>
         <Button x:Name="btnSave" Grid.Row="2" Click="btnSave_Click" Content="Изменить"
