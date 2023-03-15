@@ -125,7 +125,7 @@ namespace Jumper.Windows
             if (product != null)
             {
                 Agent.ProductSales.Remove(product);
-                DataAccess.DeleteProductSale(product);
+                //DataAccess.DeleteProductSale(product);
 
                 lvProductSales.ItemsSource = Agent.ProductSales;
                 lvProductSales.Items.Refresh();

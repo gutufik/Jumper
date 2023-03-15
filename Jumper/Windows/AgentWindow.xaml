@@ -86,7 +86,7 @@
                     Grid.RowSpan="3"
                     Grid.Row="3">
                 <Image x:Name="AgentLogo"
-                    Source="{Binding Agent.LogoImage}"
+                    Source="{Binding Agent.Logo}"
                     Height="100"/>
                 <Button x:Name="SelectImageButton"
                     Content="Выбрать изображение"

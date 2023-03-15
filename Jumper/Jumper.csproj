@@ -68,6 +68,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\ProductPartial.cs" />
     <Compile Include="Windows\AgentWindow.xaml.cs">
       <DependentUpon>AgentWindow.xaml</DependentUpon>
     </Compile>
